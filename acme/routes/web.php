@@ -10,3 +10,7 @@ Route::get('/planos', [App\Http\Controllers\BlueprintController::class, 'getBlue
 
 Route::post('/planos', [App\Http\Controllers\BlueprintController::class, 'createBlueprint'])->name('createBlueprint');
 
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
